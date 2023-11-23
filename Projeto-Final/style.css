@@ -21,7 +21,7 @@ header {
 .menu nav ul li, .social ul li {
     margin: 0px 12px;
     padding: 12px;
-    font-size: 22px;
+    font-size: 24px;
 }
 
 .menu, .social {
@@ -180,7 +180,7 @@ section.banner .categorias-geral .categoria ul {
 section.banner .categorias-geral .categoria ul li {
     margin: 22px;
     padding: 12px;
-    font-size:  24px;
+    font-size:  26px;
     font-family: monospace;
 }
 
@@ -202,7 +202,6 @@ section.banner .categorias-geral .categoria a:hover {
     font-size: 24px;
     font-family: auto;
     text-decoration: overline;
-
 }
 
 /*section.produtos {
@@ -215,14 +214,22 @@ section.banner .categorias-geral .categoria a:hover {
     gap: 24px;
 }*/
 
+section.produtos .produto{
+    margin: 20px 4px;
+}
+
 section.produtos h3{
     font-size: 22px;
 }
 
 
+
 .terror1, .Lnacional{
     clear: left;
     padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center
 }
 
 .tlivro{
@@ -233,6 +240,8 @@ section.produtos h3{
     color: rgb(240, 229, 252);
     border-radius: 10px;
     margin-bottom: 50px;
+    width: 70%;
+    align-items: center;
 }
 
 .tlivro img{
@@ -282,10 +291,21 @@ section.produtos h3{
     cursor: pointer;
 }
 
+.titulo button {
+    border: none;
+}
+.titulo a{
+    text-decoration: none;
+    color: black;
+    padding: 6px;
+    background: none;
+}
+
+
 .formulário{
     
     text-align: center;
-    padding-top: 10px;
+    padding-top: 34px;
     /*width: 100%;*/
     font-size: 18px;
     display: flex;
@@ -309,23 +329,44 @@ section.produtos h3{
 .formulário h1{
     text-decoration: overline;
     padding: 10px;
-    font-size: 30px;
+    font-size: 34px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .formulário legend{
-    font-size: 25px;
+    font-size: 28px;
     text-decoration-line: underline;
 }
+.form-doacao input {
+    margin: 10px;
+    border-radius: 6px; 
+    border: none;
+    padding: 6px;
+    
+} 
+
+.form-doacao h3 {
+    font-size: 20px;
+    margin: 10px;
+}
+
+
 
 .importante{
     background-color: rgba(68, 21, 112, 0.486);
     color: rgb(240, 229, 252);
+
 }
 
 .importante img{
     border-radius: 10px;
     
+}
+
+.importante p{
+    line-height: 24px;
+    font-size: 16px;
+    padding: 10px;
 }
 
 section.login {
@@ -337,7 +378,7 @@ section.login {
 }
 
 section.login .log{
-    width: 50%;
+    width: 35%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -367,3 +408,33 @@ section.login .log h1{
     font-family: math;
 }
 
+section.Buscar {
+    display: flex;
+    flex-direction: row;
+    background-color: #ba95e2c2;
+    width: 21%;
+    border-radius: 20px;
+    margin: 22px 0px 10px 294px;
+    
+}
+
+.busca-img img {
+    width: 86px;
+}
+
+.busca input {
+    margin: 25px 10px;
+    padding: 6px;
+    border: none;
+    border-radius: 6px;
+}
+
+.cat-titulo {
+    margin: 30px auto;
+    width: min-content;
+}
+
+.cat-titulo h1 {
+    font-size: 50px;
+    text-decoration: underline;
+}
