@@ -163,7 +163,7 @@ section.banner {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: url(Banner.jpg);
+    background: url(banner4.jpg);
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -180,7 +180,7 @@ section.banner .categorias-geral .categoria ul {
 section.banner .categorias-geral .categoria ul li {
     margin: 22px;
     padding: 12px;
-    font-size:  26px;
+    font-size:  30px;
     font-family: monospace;
 }
 
@@ -192,7 +192,7 @@ section.banner .categorias-geral .categoria a {
 }
 
 section.banner .categorias-geral .categoria a:hover {
-    background-color: purple;
+    background-color: rgba(80, 3, 99, 0.918);
     color: white;
     border-color: white;
     cursor: pointer;
@@ -220,8 +220,14 @@ section.produtos .produto{
 
 section.produtos h3{
     font-size: 22px;
+    margin-top: 12px;
 }
 
+section.produtos .produto button {
+    border: none;
+    background: none;
+    padding: 0px;
+}
 
 
 .terror1, .Lnacional{
@@ -275,7 +281,6 @@ section.produtos h3{
 .tlivro .valor button{
     display: flex;
     flex-direction: column;
-    border: 1px solid white;
     width: 100px;
     padding: 8px;
     border-radius: 17px;
@@ -283,12 +288,14 @@ section.produtos h3{
     gap: 5px;
     cursor: pointer;
     text-decoration: none;
+    border: none
 }
 
 .tlivro .valor a{
     width: fit-content;
     display: block;
     cursor: pointer;
+    text-decoration: none;
 }
 
 .titulo button {
@@ -437,4 +444,5 @@ section.Buscar {
 .cat-titulo h1 {
     font-size: 50px;
     text-decoration: underline;
+    margin: 52px;
 }
