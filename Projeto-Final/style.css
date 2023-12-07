@@ -24,6 +24,14 @@ header {
     font-size: 24px;
 }
 
+i.fa-brands.fa-facebook {
+    font-size: 36px;
+}
+
+i.fa-brands.fa-instagram {
+    font-size: 36px;
+}
+
 .menu, .social {
     display: flex;
     align-items: center;
@@ -59,6 +67,8 @@ section.sobre{
     margin: 12px;
     display: flex;
     flex-direction: row;
+    -webkit-animation: slide-in-fwd-center 1.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-in-fwd-center 1.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both; 
 }
 
 section.sobre div{
@@ -332,6 +342,9 @@ section.produtos .produto button {
     color: rgb(248, 240, 255);
     border-radius: 10px;
     padding: 20px;
+    -webkit-animation: scale-up-center 0.8s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: scale-up-center 0.8s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+
 }
 .formulário h1{
     text-decoration: overline;
@@ -446,3 +459,32 @@ section.Buscar {
     text-decoration: underline;
     margin: 52px;
 }
+
+header .logo img {
+    width: 178px;
+}
+
+ /* ------------- */
+ 
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-image: linear-gradient(90deg, rgb(225, 216, 255), rgb(203, 185, 255));
+    -webkit-animation: fade-in 0.2s cubic-bezier(0.600, 0.040, 0.980, 0.335) both;
+    animation: fade-in 0.2s cubic-bezier(0.600, 0.040, 0.980, 0.335) both;
+    
+  }  
+  #meuheader .logo img.sticky {
+    width:  90px;
+    -webkit-animation: fade-in 0.4s cubic-bezier(0.600, 0.040, 0.980, 0.335) both;
+    animation: fade-in 0.4s cubic-bezier(0.600, 0.040, 0.980, 0.335) both;
+    background: none;
+  }  
+  .sticky + .content {
+    padding-top: 102px;
+  }
+
+  @-webkit-keyframes fade-in{0%{opacity:0}100%{opacity:1}}@keyframes fade-in{0%{opacity:0}100%{opacity:1}}
+  @-webkit-keyframes scale-up-center{0%{-webkit-transform:scale(.5);transform:scale(.5)}100%{-webkit-transform:scale(1);transform:scale(1)}}@keyframes scale-up-center{0%{-webkit-transform:scale(.5);transform:scale(.5)}100%{-webkit-transform:scale(1);transform:scale(1)}}
+  @-webkit-keyframes slide-in-fwd-center{0%{-webkit-transform:translateZ(-1400px);transform:translateZ(-1400px);opacity:0}100%{-webkit-transform:translateZ(0);transform:translateZ(0);opacity:1}}@keyframes slide-in-fwd-center{0%{-webkit-transform:translateZ(-1400px);transform:translateZ(-1400px);opacity:0}100%{-webkit-transform:translateZ(0);transform:translateZ(0);opacity:1}}

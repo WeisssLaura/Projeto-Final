@@ -200,6 +200,25 @@
          </div>
     </footer>
 
+    <script> 
+
+        window.onscroll = function(){minhafuncao()};
+        var header = document.getElementById("meuheader");
+        var logo = document.querySelector("#meuheader .logo img");
+        var sticky = header.offsetTop;
+            function minhafuncao(){
+                if((window.pageYOffset > sticky)){
+                    header.classList.add("sticky");
+                    logo.classList.add("sticky");
+                }
+                else{
+                    header.classList.remove("sticky");
+                    logo.classList.remove("sticky");
+                }
+            }
+    
+    </script>
+
 
 
 </body>
