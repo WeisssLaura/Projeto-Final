@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema Magicbook</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/4ba9326f85.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+    <header id="meuheader">
+        <div class="logo"><img src="logo teste.png" /> </div>
+         <div class="menu"><nav>
+                <ul>
+                <li> <a href="index.html">Home</a></li>
+                <li> <a href="Livros.html">Livros</a></li>
+                <li> <a href="FDoações.html">Doações</a></li>
+                <li> <a href="#">Login</a></li>
+            </ul>
+        </nav></div>
+    
+        <div class="social">
+            <ul>
+                <li> <a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                <li> <a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+            </ul>
+        </div>
+
+    </header>
+
+
+
+    
+    <div class="cat-titulo">
+        <h1> &#x2605;&nbsp;Aventura&nbsp;&#x2605; </h1>
+
+    </div>
+
+    <section class="Buscar ">
+        <div class="busca-img"> <img src="busca.png"> </div>
+        <div class="busca">
+            <input type="text" id="pesquisa" placeholder="Digite sua Busca" >
+          
+
+        </div>
+    </section>
+ 
+    <div class="terror1 d-flex flex-column" id="livros">
+    </div>
+    
+  <footer>
+        <div class="espacamento"> &nbsp; </div>
+        <div class="footer-interno">
+            <div class="form-news">
+                <h2>Newsletter</h3>
+                <p> Receba nossas informações</p> 
+                <input type="text" placeholder="Seu Nome" />
+                <input type="email" placeholder="Seu Email" /> 
+                <input type="submit" value="Enviar" />
+            </div>
+
+            <div class="footer-coluna-1">
+                <ul>
+                    <li class="titulo"> Horario de Funcionamento</li>
+                    <li>De 2ª a 6ª feira </li>
+                    <li>Das 08:30 - 11:30 / 13:30 - 17:30</li>
+                    <li>Aos Sabados</li>
+                    <li>Das 11:00 - 18:00</li>
+                </ul>
+            </div>
+
+            <div class="footer-coluna-2">
+                <ul>
+                    <li class="titulo">Telefone</li>
+                    <li>(51) 3261-5794</li>
+                    <li>(51) 3075-9361</li>
+                    <li><br></li>
+                    <li class="titulo"> Email </li>
+                    <li>magicbook@gmail.com</li>
+                </ul>
+            </div>
+
+         </div>
+    </footer>
+
+    <script> 
+
+        window.onscroll = function(){minhafuncao()};
+        var header = document.getElementById("meuheader");
+        var logo = document.querySelector("#meuheader .logo img");
+        var sticky = header.offsetTop;
+            function minhafuncao(){
+                if((window.pageYOffset > sticky)){
+                    header.classList.add("sticky");
+                    logo.classList.add("sticky");
+                }
+                else{
+                    header.classList.remove("sticky");
+                    logo.classList.remove("sticky");
+                }
+            }
+
+        var livrosImg = document.querySelectorAll("div.terror1 div.tlivro img");
+        var livrosH1 = document.querySelectorAll("div.terror1 div.tlivro div.dados h1");
+        var livrosH2 = document.querySelectorAll("div.terror1 div.tlivro div.dados h2");
+        var livrosP = document.querySelectorAll("div.terror1 div.tlivro div.dados p");
+        var livrosP = document.querySelectorAll("div.terror1 div.tlivro div.dados p");
+        var livrosValor = document.querySelectorAll("div.terror1 div.tlivro div.dados div.valor button span"); 
+
+
+
+        var objLivros = [
+
+        {
+                imagem: "jogos vorazes.jpg",
+                titulo: "Jogos Vorazes",
+                autor: "Suzanne Collins",
+                desc: "Após o fim da América do Norte, uma nova nação chamada Panem surge. Formada por doze distritos, é comandada com mão de ferro pela Capital. Uma das formas com que demonstra seu poder sobre o resto do carente país é com Jogos Vorazes, uma competição anual transmitida ao vivo pela televisão, em que um garoto e uma garota de doze a dezoito anos de cada distrito são selecionados e obrigados a lutar até a morte! Para evitar que sua irmã seja a mais nova vítima do programa, Katniss se oferece para participar em seu lugar. Vinda do empobrecido Distrito 12, ela sabe como sobreviver em um ambiente hostil. Peeta, um garoto que ajudou sua família no passado, também foi selecionado. Caso vença, terá fama e fortuna. Se perder, morre. Mas para ganhar a competição, será preciso muito mais do que habilidade. Até onde Katniss estará disposta a ir para ser vitoriosa nos Jogos Vorazes?",
+                valor: "R$40,00",
+                categoria: "Aventura",
+            },
+    
+            {
+                imagem: "harry potter.jpg",
+                titulo: " Harry Potter",
+                autor: "J.K. Rowling",
+                desc: "Harry Potter é um garoto cujos pais, feiticeiros, foram assassinados por um poderosíssimo bruxo quando ele ainda era um bebê. Ele foi levado, então, para a casa dos tios que nada tinham a ver com o sobrenatural. Até os 10 anos, Harry foi uma espécie de gata borralheira: maltratado pelos tios, herdava roupas velhas do primo gorducho, tinha óculos remendados e era tratado como um estorvo. No dia de seu aniversário de 11 anos, entretanto, ele descobre sua verdadeira história e seu destino: ser um aprendiz de feiticeiro até o dia em que terá que enfrentar a pior força do mal, o homem que assassinou seus pais. O menino de olhos verde, magricela e desengonçado, tão habituado à rejeição, descobre, também, que é um herói no universo dos magos. Potter fica sabendo que é a única pessoa a ter sobrevivido a um ataque do tal bruxo do mal e essa é a causa da marca em forma de raio que ele carrega na testa. ",
+                valor: "R$45,00",
+                categoria: "Aventura",
+            },
+    
+            {
+                imagem: "nárnia.jpg",
+                titulo: "As Crônicas de Narnia",
+                autor: "C. S. Lewis",
+                desc: "Viagens ao fim do mundo, criaturas fantásticas e batalhas épicas entre o bem e o mal - o que mais um leitor poderia querer de um livro? O livro que tem tudo isso é 'O leão, a feiticeira e o guarda-roupa', escrito em 1949 por Clive Staples Lewis. MasLewis não parou por aí. Seis outros livros vieram depois e, juntos, ficaram conhecidos como 'As crônicas de Nárnia'. Nos últimos cinqüenta anos, 'As crônicas de Nárnia' transcenderam o gênero da fantasia para se tornar parte do cânone da literaturaclássica. Cada um dos sete livros é uma obra-prima, atraindo o leitor para um mundo em que a magia encontra a realidade, e o resultado é um mundo ficcional que tem fascinado gerações. Esta edição apresenta todas as sete crônicas integralmente, num único volume. Os livros são apresentados de acordo com a ordem de preferência de Lewis, cada capítulo com uma ilustração do artista original, Pauline Baynes. Enganosamente simples e direta, 'As crônicas de Nárnia' continuam cativando os leitores com aventuras, personagens e fatos que falam a pessoas de todas as idades.",
+                valor: "R$41,50",
+                categoria: "Aventura",
+            },
+    
+            {
+                imagem: "percy jackson.jpg",
+                titulo: "Percy Jackson e o Ladrão de Raios",
+                autor: "Rick Riordan",
+                desc: "O autor conjuga lendas da mitologia grega com aventuras no século XXI. Nelas, os deuses do Olimpo continuam vivos, ainda se apaixonam por mortais e geram filhos metade deuses, metade humanos, como os heróis da Grécia antiga. Marcados pelo destino, eles dificilmente passam da adolescência. Poucos conseguem descobrir sua identidade. O garoto-problema Percy Jackson é um deles. Tem experiências estranhas em que deuses e monstros mitológicos parecem saltar das páginas dos livros direto para a sua vida. Pior que isso: algumas dessas criaturas estão bastante irritadas. Um artefato precioso foi roubado do Monte Olimpo e Percy é o principal suspeito. Para restaurar a paz, ele e seus amigos – jovens heróis modernos – terão de fazer mais do que capturar o verdadeiro ladrão: precisam elucidar uma traição mais ameaçadora que fúria dos deuses.",
+                valor: "R$30,00",
+                categoria: "Aventura",
+            },
+
+           
+        ]
+
+        function pesquisar() {
+        var pesquisa = document.getElementById("pesquisa").value;
+        var produtosFiltrados = objLivros.filter( objLivros => {
+         return objLivros.titulo.toLowerCase().includes(pesquisa.toLowerCase()) ||
+            objLivros.autor.toString().toLowerCase().includes(pesquisa.toLowerCase()) ||
+            objLivros.desc.toString().toLowerCase().includes(pesquisa.toLowerCase()) ||
+            objLivros.valor.toString().toLowerCase().includes(pesquisa.toLowerCase()) ||
+            objLivros.categoria.toLowerCase().includes(pesquisa.toLowerCase());
+        });
+        if (!pesquisa) {
+            produtosFiltrados = objLivros;
+        }
+        var html = "";
+        produtosFiltrados.forEach(objLivros => {
+            html += `
+             <div class="tlivro">
+            <img src="${objLivros.imagem}">
+            <div class="dados">
+                <h1>${objLivros.titulo}</h1>
+                <h2>${objLivros.autor}</h2>
+                <p> ${objLivros.desc}</p>
+                
+                    <div class="valor">
+                         
+                        <a href="#">
+                            <button>
+                            <span> Capa Dura </span>
+                            <span> ${objLivros.valor}</span>
+                            </button>
+                         </a>
+                         
+
+
+                     </div>
+            </div>
+        </div>
+        `;
+    });
+
+        document.getElementById("livros").innerHTML = html;
+        }
+
+        document.getElementById("pesquisa").addEventListener("input", pesquisar);
+
+        pesquisar();
+
+
+    </script>
+</body>
+</html>
